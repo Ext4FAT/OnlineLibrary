@@ -18,12 +18,18 @@
 			echo "<br/> Please back to the last pase to check you e-mail address if valid.<br/>";
 		}
 		else {
+			$collection = "{|";
 			echo "<h2> [$YOU_KINDLE_EMAIL] </h2>";
 			echo "<h3> Selected Books </h3>";
 			foreach ($_POST["selected"] as $select) {
-				echo getBasename("$select") . "<br/>";
+				$basename = getBasename("$select");
+				$collection = $collection . $basename . "|";
+				echo $basename . "<br/>";
 				$state = mySendEmail($YOU_KINDLE_EMAIL, "$select");
 			}
+			$collection = $collection . "}";
+			myLog(date("Y-m-d h:i:sa") . "\t[" . $YOU_KINDLE_EMAIL  . "]\t" . $collection);
+			
 			echo "<br/><br/> Selected E-books have been sent to your E-mail Successfully. Please check it. If there are serval books, maybe you need to wait for a while. <br/>";
 		}
 		?>

@@ -4,13 +4,18 @@
       <meta http-equiv="Content-Style-Type" content="text/css" />
 	  <title> Technique E-Books Library </title>
       <style type="text/css">code{white-space: pre;}</style>
+      <!-- Bound Tags -->
       <style> 
-		.bor{border:1px dashed #F00;width:300px;height:60px;margin-top:10px} span{display:block}/*css注释说明：让span形成块*/ 
+		.bor{border:1px dashed #F00;width:300px;height:60px;margin-top:10px} span{display:block} 
 	  </style>
       <link rel="stylesheet" href="./css/github2.css" type="text/css" />
     </head>
 	<body>
 		<h1> Technique E-Books Library </h1>
+        <!-- Query User Info -->
+        
+        <?php
+        ?>
         
         <!-- Post Query--> 
         <form action="query.php" method="post">
@@ -29,8 +34,10 @@
 			
 			if ($_POST["keyword"] == '')
 				return;
+			// LOG
+			myLog(date("Y-m-d h:i:sa") . "\t[" . $_POST["keyword"] . "]");
+			//
 			print_r("<h3>[KEYWORD]: " .  $_POST["keyword"] . "</h3>");
-			
 			$prefix = "http://imaginelab.cn/pdfviewer/web/viewer.html?file=";
 			$validType = array('pdf'=>1, 'mobi'=>2, 'epub'=>3, 'txt'=>4);
 			$content = shell_exec('find ./Books/ -type f -iname "*' . $_POST["keyword"] . '*"');

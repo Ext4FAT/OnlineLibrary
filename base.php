@@ -25,8 +25,15 @@
 	}
 	
 	function mySendEmail($email, $attachment) {
-		$CMD = 'sendemail -s smtp.gmail.com:587 -f njucs315@gmail.com -t ' . "$email" . ' -u "EBOOK-ADD" -m "EBOOK-LIST" -xu njucs315@gmail.com -xp xxxxxx -o tls=auto ';
+		$CMD = 'sendemail -s smtp.gmail.com:587 -f njucs315@gmail.com -t ' . "$email" . ' -u "EBOOK-ADD" -m "EBOOK-LIST" -xu njucs315@gmail.com -xp xxxxxxx -o tls=auto ';
 		$state = exec("$CMD -a  \"$attachment\"" . " 1>/dev/null &");
 		return $state;
+	}
+	
+	function myLog($row) {
+		$filename = 'search.log';
+		$fh = fopen($filename, "a+");
+		fwrite($fh, $row . "\n"); 
+		fclose($fh);
 	}
 	
