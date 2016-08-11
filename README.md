@@ -7,14 +7,11 @@ Build an online pdf view with `pdfjs` and search file by `find`.
 pdfjs
 ```
 ## Snapshot
-![demo](./demo.png)
+<iframe height=640 width=480 src="./demo.png"> </iframe>
 
 ## Just a demo
-<iframe height=500 width=500 src="./library.gif"> </iframe>
+<iframe height=640 width=480 src="./library.gif"> </iframe>
 
-
-
-![library](./library.gif)
 
 ## TODO FUNCTION
 - SLECT ALL
