@@ -7,9 +7,13 @@ Build an online pdf view with `pdfjs` and search file by `find`.
 pdfjs
 ```
 ## Snapshot
-![demo](./demo.png)
+![demo](./demo2.png)
 
 ## Just a demo
+<iframe height=500 width=500 src="./library.gif">
+
+
+
 ![library](./library.gif)
 
 ## TODO FUNCTION
