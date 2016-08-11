@@ -1,6 +1,6 @@
 # Online Viewer
 ## Introduction
-A simple online library implementation developed with `php`.
+A simple online library implemented with `php`.
 Build an online pdf view with `pdfjs` and search file by `find`. 
 ## Dependency
 ```
