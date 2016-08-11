@@ -1,14 +1,21 @@
 # Online Viewer
 ## Introduction
-Build an online pdf view with `pdfjs` and search file by `find` developed with `PHP`
+A simple online library implementation developed with `php`.
+Build an online pdf view with `pdfjs` and search file by `find`. 
 ## Dependency
 ```
 pdfjs
 ```
+## Snapshot
+![demo](./demo.png)
+
 ## Just a demo
+![library](./library.gif)
 
-![pic](./library.gif)
-
-
-To be continue ... 
+## TODO FUNCTION
+- SLECT ALL
+- NGNIX CONFIG 
+- RECORD CLIENT IP
+- RECOMMENDATION
+ 
 
