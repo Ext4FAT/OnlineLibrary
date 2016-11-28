@@ -13,7 +13,7 @@ pdfjs
 ![library.gif](./library.gif)
 
 ## TODO FUNCTION
-- SLECT ALL
+- SELECT ALL
 - NGNIX CONFIG 
 - RECORD CLIENT IP
 - RECOMMENDATION
