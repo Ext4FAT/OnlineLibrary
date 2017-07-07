@@ -9,7 +9,7 @@ pdfjs
 ## Snapshot
 ![demo](./demo.png)
 
-## Just a demo
+## Demo
 ![library.gif](./library.gif)
 
 ## TODO FUNCTION
